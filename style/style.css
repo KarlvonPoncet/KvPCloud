@@ -216,6 +216,74 @@ section[aria-labelledby="shop-heading"] li a {
   width: 100%;
 }
 
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 100%;
+  padding: 22px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: #ffffff;
+}
+
+.price-card.featured {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-soft);
+}
+
+.price-card h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.price-card p {
+  margin: 0;
+}
+
+.price-card .price {
+  color: var(--color-text);
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.price-card .price span {
+  color: var(--color-muted);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.price-card ul {
+  gap: 8px;
+  margin: 0 0 6px;
+}
+
+.price-card > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin-top: auto;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  background: var(--color-primary);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.price-card > a:hover {
+  background: var(--color-primary-dark);
+  color: #ffffff;
+}
+
 footer {
   display: grid;
   gap: 18px;
