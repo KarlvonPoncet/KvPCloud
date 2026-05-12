@@ -116,8 +116,10 @@ section {
 
 main > section:first-child {
   display: grid;
-  gap: 18px;
-  padding: 48px;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.9fr);
+  align-items: center;
+  gap: 32px;
+  padding: 40px;
   border: 0;
   background:
     linear-gradient(135deg, rgba(23, 92, 211, 0.12), rgba(8, 127, 91, 0.14)),
@@ -125,7 +127,7 @@ main > section:first-child {
   box-shadow: var(--shadow-soft);
 }
 
-main > section:first-child p:first-child {
+main > section:first-child div > p:first-child {
   width: fit-content;
   margin: 0;
   padding: 6px 10px;
@@ -137,6 +139,30 @@ main > section:first-child p:first-child {
   font-weight: 700;
 }
 
+.hero-visual {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+}
+
+.hero-visual img {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  margin-inline: auto;
+  border: 1px solid rgba(23, 92, 211, 0.18);
+  border-radius: var(--radius);
+  background: #ffffff;
+  box-shadow: 0 14px 28px rgba(16, 32, 51, 0.14);
+}
+
+.hero-visual figcaption {
+  color: var(--color-muted);
+  font-size: 0.92rem;
+  text-align: center;
+}
+
 h1,
 h2 {
   margin: 0 0 12px;
@@ -144,8 +170,8 @@ h2 {
 }
 
 h1 {
-  max-width: 780px;
-  font-size: clamp(2rem, 5vw, 4rem);
+  max-width: 680px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
 }
 
 h2 {
@@ -170,13 +196,13 @@ section ul {
   padding-left: 1.2rem;
 }
 
-main > section:first-child p:last-child {
+main > section:first-child div > p:last-child {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
 }
 
-main > section:first-child p:last-child a,
+main > section:first-child div > p:last-child a,
 section[aria-labelledby="shop-heading"] li a {
   display: inline-flex;
   align-items: center;
@@ -189,19 +215,19 @@ section[aria-labelledby="shop-heading"] li a {
   text-decoration: none;
 }
 
-main > section:first-child p:last-child a:hover,
+main > section:first-child div > p:last-child a:hover,
 section[aria-labelledby="shop-heading"] li a:hover {
   background: var(--color-primary-dark);
   color: #ffffff;
 }
 
-main > section:first-child p:last-child a + a {
+main > section:first-child div > p:last-child a + a {
   border: 1px solid var(--color-primary);
   background: #ffffff;
   color: var(--color-primary);
 }
 
-main > section:first-child p:last-child a + a:hover {
+main > section:first-child div > p:last-child a + a:hover {
   background: #e8f1ff;
   color: var(--color-primary-dark);
 }
@@ -318,6 +344,10 @@ footer nav a {
   main > section:first-child,
   section {
     padding: 22px;
+  }
+
+  main > section:first-child {
+    grid-template-columns: 1fr;
   }
 }
 
