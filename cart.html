@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Warenkorb fuer KvPCloud mit Tarifauswahl und Checkout.">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Warenkorb | KvPCloud</title>
+</head>
+<body>
+  <header>
+    <a href="index.html" aria-label="KvPCloud Startseite">KvPCloud</a>
+
+    <nav aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="pricing.html">Preise</a></li>
+        <li><a href="cart.html" aria-current="page">Warenkorb</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-text-only">
+      <div>
+        <p>Checkout</p>
+        <h1>Warenkorb und Bestellung für KvPCloud.</h1>
+        <p>
+          Auf dieser Seite wählen Sie Ihren Tarif, ergänzen Kundendaten und prüfen
+          die Bestellübersicht vor dem Abschluss.
+        </p>
+        <p>
+          <a href="pricing.html">Tarife ändern</a>
+          <a href="license.html">Lizenz prüfen</a>
+        </p>
+      </div>
+    </section>
+
+    <section aria-labelledby="cart-heading">
+      <h2 id="cart-heading">Bestellübersicht</h2>
+      <div class="checkout-layout">
+        <form class="checkout-form" action="#" method="post">
+          <fieldset>
+            <legend>Tarif auswählen</legend>
+
+            <label for="plan">KvPCloud-Tarif</label>
+            <select id="plan" name="plan">
+              <option value="free">Free - 0 € / Monat</option>
+              <option value="team" selected>Team - 19 € / Monat</option>
+              <option value="business">Business - 49 € / Monat</option>
+              <option value="enterprise">Enterprise - Preis auf Anfrage</option>
+            </select>
+
+            <label for="users">Benutzeranzahl</label>
+            <input id="users" name="users" type="number" min="1" max="25" value="5">
+          </fieldset>
+
+          <fieldset>
+            <legend>Kundendaten</legend>
+
+            <label for="company">Unternehmen</label>
+            <input id="company" name="company" type="text" autocomplete="organization" placeholder="Muster GmbH">
+
+            <label for="name">Ansprechperson</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Max Mustermann">
+
+            <label for="email">E-Mail-Adresse</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="max@example.com">
+          </fieldset>
+
+          <fieldset>
+            <legend>Zahlungsart</legend>
+            <p id="payment-hint">Wählen Sie die gewünschte Zahlungsart für Ihre Bestellung.</p>
+
+            <label class="choice">
+              <input type="radio" name="payment" value="invoice" checked>
+              Rechnung
+            </label>
+            <label class="choice">
+              <input type="radio" name="payment" value="card">
+              Kreditkarte
+            </label>
+            <label class="choice">
+              <input type="radio" name="payment" value="transfer">
+              Banküberweisung
+            </label>
+          </fieldset>
+
+          <label class="choice">
+            <input type="checkbox" name="terms">
+            Ich habe die <a href="license.html">Lizenzbedingungen</a> und die
+            <a href="privacy.html">Datenschutzerklärung</a> gelesen.
+          </label>
+
+          <button type="submit">Bestellung abschließen</button>
+        </form>
+
+        <aside class="order-summary" aria-labelledby="summary-heading">
+          <h3 id="summary-heading">Zusammenfassung</h3>
+          <dl>
+            <div>
+              <dt>Produkt</dt>
+              <dd>KvPCloud</dd>
+            </div>
+            <div>
+              <dt>Tarif</dt>
+              <dd>Team</dd>
+            </div>
+            <div>
+              <dt>Laufzeit</dt>
+              <dd>monatlich kündbar</dd>
+            </div>
+            <div>
+              <dt>Nettopreis</dt>
+              <dd>19 € / Monat</dd>
+            </div>
+            <div>
+              <dt>Umsatzsteuer</dt>
+              <dd>nur beispielhaft dargestellt</dd>
+            </div>
+          </dl>
+          <p class="summary-total">Gesamt: 19 € / Monat</p>
+          <p>
+            Die Zusammenfassung zeigt den ausgewählten Tarif und die monatlichen
+            Kosten für die Bestellung.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section aria-labelledby="notice-heading">
+      <h2 id="notice-heading">Wichtiger Hinweis</h2>
+      <p>
+        Vor dem Abschluss sollten Tarif, Laufzeit, Lizenzbedingungen und
+        Datenschutzinformationen sorgfältig geprüft werden.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 KvP Solutions GmbH.</p>
+    <nav aria-label="Footer-Navigation">
+      <ul>
+        <li><a href="accessibility.html">Barrierefreiheit</a></li>
+        <li><a href="copyright.html">Urheberrecht</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="privacy.html">Datenschutz</a></li>
+        <li><a href="license.html">Lizenz</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+        <li><a href="imprint.html">Impressum</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
