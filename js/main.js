@@ -46,4 +46,15 @@ document.querySelectorAll("form[data-enhanced]").forEach((form) => {
   });
 });
 
+document.querySelectorAll(".table-wrap table").forEach((table) => {
+  const headings = Array.from(table.querySelectorAll("thead th")).map((heading) => heading.textContent.trim());
+  table.querySelectorAll("tbody tr").forEach((row) => {
+    Array.from(row.children).forEach((cell, index) => {
+      if (headings[index]) {
+        cell.dataset.label = headings[index];
+      }
+    });
+  });
+});
+
 updateSummary();

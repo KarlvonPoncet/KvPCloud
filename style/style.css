@@ -1199,7 +1199,7 @@ th {
   }
 
   h1 {
-    font-size: clamp(2.05rem, 12vw, 3.2rem);
+    font-size: 2.45rem;
   }
 
   .actions,
@@ -1232,6 +1232,65 @@ th {
 
   .order-summary dd {
     text-align: left;
+  }
+
+  .table-wrap {
+    overflow-x: visible;
+  }
+
+  .table-wrap table,
+  .table-wrap thead,
+  .table-wrap tbody,
+  .table-wrap tr,
+  .table-wrap td {
+    display: block;
+  }
+
+  .table-wrap table {
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .table-wrap thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .table-wrap tbody {
+    display: grid;
+    gap: 12px;
+  }
+
+  .table-wrap tr {
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: #ffffff;
+    box-shadow: 0 12px 30px rgba(16, 40, 62, 0.07);
+  }
+
+  .table-wrap td {
+    display: grid;
+    grid-template-columns: minmax(108px, 38%) minmax(0, 1fr);
+    gap: 12px;
+    padding: 12px 14px;
+  }
+
+  .table-wrap td::before {
+    color: var(--ink);
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    content: attr(data-label);
+  }
+
+  .table-wrap td:last-child {
+    border-bottom: 0;
   }
 }
 
