@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Warenkorb fuer KvPCloud mit Tarifauswahl und Checkout.">
-  <link rel="stylesheet" href="style/style.css">
-  <title>Warenkorb | KvPCloud</title>
+  <meta name="description" content="Warenkorb für von Poncet Cloud mit Tarifauswahl, Kundendaten und Bestellübersicht.">
+  <link rel="stylesheet" href="style/style.css?v=7">
+  <script src="js/main.js" defer></script>
+  <title>Warenkorb | von Poncet Cloud</title>
 </head>
 <body>
-  <header>
-    <a href="index.html" aria-label="KvPCloud Startseite">KvPCloud</a>
-
+  <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="von Poncet Cloud Startseite"><span class="brand-logo" aria-hidden="true"></span>von Poncet Cloud</a>
     <nav aria-label="Hauptnavigation">
       <ul>
         <li><a href="index.html">Startseite</a></li>
+        <li><a href="product.html">Produkt</a></li>
         <li><a href="pricing.html">Preise</a></li>
         <li><a href="cart.html" aria-current="page">Warenkorb</a></li>
         <li><a href="about.html">About us</a></li>
@@ -22,134 +24,97 @@
     </nav>
   </header>
 
-  <main>
-    <section class="hero-text-only">
+  <main id="main-content">
+    <section class="hero hero-text-only hero-cart">
       <div>
-        <p>Checkout</p>
-        <h1>Warenkorb und Bestellung für KvPCloud.</h1>
-        <p>
-          Auf dieser Seite wählen Sie Ihren Tarif, ergänzen Kundendaten und prüfen
-          die Bestellübersicht vor dem Abschluss.
-        </p>
-        <p>
-          <a href="pricing.html">Tarife ändern</a>
-          <a href="license.html">Lizenz prüfen</a>
-        </p>
+        <p class="eyebrow">Checkout</p>
+        <h1>von Poncet Cloud bestellen</h1>
+        <p class="lead">Wählen Sie den passenden Tarif, ergänzen Sie Kundendaten und prüfen Sie die Demo-Zusammenfassung vor dem Abschluss.</p>
+        <div class="actions">
+          <a class="button secondary" href="pricing.html">Tarife ändern</a>
+          <a class="button secondary" href="terms.html">AGB lesen</a>
+          <a class="button secondary" href="license.html">Lizenz prüfen</a>
+          <a class="button secondary" href="privacy.html">Datenschutz prüfen</a>
+        </div>
       </div>
     </section>
 
-    <section aria-labelledby="cart-heading">
+    <section class="checkout-stage" aria-labelledby="cart-heading">
       <h2 id="cart-heading">Bestellübersicht</h2>
+      <div class="legal-callout" role="note">
+        <strong>Demo-Checkout</strong>
+        <p>Dies ist ein Demo-Checkout im Rahmen einer Hochschulübung. Es kommt kein Vertrag zustande, es erfolgt keine Zahlung und es wird keine echte Bestellung ausgelöst. Bei einem echten Fernabsatzangebot sind die Informations- und Buttonpflichten nach FAGG final umzusetzen.</p>
+      </div>
+      <figure class="checkout-visual">
+        <img src="assets/images/vonponcetcloud-pricing-still-life.png" alt="Demo-Bestellübersicht mit physischen Tarifblöcken und sicherem Auswahlmarker">
+      </figure>
       <div class="checkout-layout">
-        <form class="checkout-form" action="#" method="post">
+        <form class="checkout-form" action="#" method="post" data-enhanced data-success-message="Ihre Demo-Bestellung wurde lokal erfasst. Es wurde keine echte Bestellung ausgelöst.">
           <fieldset>
             <legend>Tarif auswählen</legend>
-
-            <label for="plan">KvPCloud-Tarif</label>
+            <label for="plan">von Poncet Cloud-Tarif</label>
             <select id="plan" name="plan">
-              <option value="free">Free - 0 € / Monat</option>
-              <option value="team" selected>Team - 19 € / Monat</option>
-              <option value="business">Business - 49 € / Monat</option>
+              <option value="free">Free - 0 EUR / Monat</option>
+              <option value="team" selected>Team - 22,80 EUR / Monat</option>
+              <option value="business">Business - 58,80 EUR / Monat</option>
               <option value="enterprise">Enterprise - Preis auf Anfrage</option>
             </select>
-
-            <label for="users">Benutzeranzahl</label>
-            <input id="users" name="users" type="number" min="1" max="25" value="5">
           </fieldset>
 
           <fieldset>
             <legend>Kundendaten</legend>
-
+            <p class="field-hint">Die Angaben werden in dieser Demo nur lokal für die Bestellübersicht verwendet. Die Datenschutzerklärung beschreibt, wie Kontakt-, Bestell- und Supportdaten in einem produktiven SaaS-Betrieb verarbeitet werden.</p>
             <label for="company">Unternehmen</label>
-            <input id="company" name="company" type="text" autocomplete="organization" placeholder="Muster GmbH">
-
+            <input id="company" name="company" type="text" autocomplete="organization" placeholder="Berger & Partner GmbH" required>
             <label for="name">Ansprechperson</label>
-            <input id="name" name="name" type="text" autocomplete="name" placeholder="Max Mustermann">
-
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Anna Berger" required>
             <label for="email">E-Mail-Adresse</label>
-            <input id="email" name="email" type="email" autocomplete="email" placeholder="max@example.com">
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="anna.berger@unternehmen.at" required>
           </fieldset>
 
           <fieldset>
             <legend>Zahlungsart</legend>
-            <p id="payment-hint">Wählen Sie die gewünschte Zahlungsart für Ihre Bestellung.</p>
-
-            <label class="choice">
-              <input type="radio" name="payment" value="invoice" checked>
-              Rechnung
-            </label>
-            <label class="choice">
-              <input type="radio" name="payment" value="card">
-              Kreditkarte
-            </label>
-            <label class="choice">
-              <input type="radio" name="payment" value="transfer">
-              Banküberweisung
-            </label>
+            <p id="payment-hint">Die Zahlungsart ist Teil der Demo und löst keine Zahlung aus.</p>
+            <label class="choice"><input type="radio" name="payment" value="invoice" checked> Rechnung</label>
+            <label class="choice"><input type="radio" name="payment" value="card"> Kreditkarte</label>
+            <label class="choice"><input type="radio" name="payment" value="transfer"> Banküberweisung</label>
           </fieldset>
 
           <label class="choice">
-            <input type="checkbox" name="terms">
-            Ich habe die <a href="license.html">Lizenzbedingungen</a> und die
-            <a href="privacy.html">Datenschutzerklärung</a> gelesen.
+            <input type="checkbox" name="terms" required>
+            Ich habe die <a href="terms.html">AGB</a>, die <a href="license.html">Lizenzbedingungen</a> und die <a href="privacy.html">Datenschutzerklärung</a> gelesen.
           </label>
-
-          <button type="submit">Bestellung abschließen</button>
+          <p class="field-hint">Datenschutzkontakt: <a href="mailto:datenschutz@vonponcetsolutions.at">datenschutz@vonponcetsolutions.at</a>. Es werden in dieser Demo keine Zahlungsdaten an Zahlungsdienstleister übertragen.</p>
+          <p class="form-status" tabindex="-1"></p>
+          <button type="submit">Demo-Bestellung erfassen</button>
         </form>
 
         <aside class="order-summary" aria-labelledby="summary-heading">
           <h3 id="summary-heading">Zusammenfassung</h3>
           <dl>
-            <div>
-              <dt>Produkt</dt>
-              <dd>KvPCloud</dd>
-            </div>
-            <div>
-              <dt>Tarif</dt>
-              <dd>Team</dd>
-            </div>
-            <div>
-              <dt>Laufzeit</dt>
-              <dd>monatlich kündbar</dd>
-            </div>
-            <div>
-              <dt>Nettopreis</dt>
-              <dd>19 € / Monat</dd>
-            </div>
-            <div>
-              <dt>Umsatzsteuer</dt>
-              <dd>nur beispielhaft dargestellt</dd>
-            </div>
+            <div><dt>Produkt</dt><dd>von Poncet Cloud</dd></div>
+            <div><dt>Tarif</dt><dd data-summary="plan">Team</dd></div>
+            <div><dt>Laufzeit</dt><dd>monatlich kündbar</dd></div>
+            <div><dt>Bruttopreis</dt><dd data-summary="price">22,80 EUR / Monat</dd></div>
+            <div><dt>Enthaltene USt.</dt><dd data-summary="tax">3,80 EUR / Monat</dd></div>
           </dl>
-          <p class="summary-total">Gesamt: 19 € / Monat</p>
-          <p>
-            Die Zusammenfassung zeigt den ausgewählten Tarif und die monatlichen
-            Kosten für die Bestellung.
-          </p>
+          <p class="summary-total" data-summary="total">Demo-Gesamt: 22,80 EUR / Monat</p>
+          <p>Die Zusammenfassung aktualisiert sich automatisch anhand Ihrer Tarifauswahl. Im Demo-Checkout besteht keine Zahlungspflicht.</p>
         </aside>
       </div>
     </section>
-
-    <section aria-labelledby="notice-heading">
-      <h2 id="notice-heading">Wichtiger Hinweis</h2>
-      <p>
-        Vor dem Abschluss sollten Tarif, Laufzeit, Lizenzbedingungen und
-        Datenschutzinformationen sorgfältig geprüft werden.
-      </p>
-    </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 KvP Solutions GmbH.</p>
+  <footer class="site-footer">
+    <p>&copy; 2026 von Poncet Solutions GmbH.</p>
     <nav aria-label="Footer-Navigation">
       <ul>
         <li><a href="accessibility.html">Barrierefreiheit</a></li>
         <li><a href="copyright.html">Urheberrecht</a></li>
-        <li><a href="about.html">About us</a></li>
         <li><a href="privacy.html">Datenschutz</a></li>
-        <li><a href="license.html">Lizenz</a></li>
-        <li><a href="contact.html">Kontakt</a></li>
+        <li><a href="terms.html">AGB</a></li><li><a href="license.html">Lizenz</a></li>
         <li><a href="imprint.html">Impressum</a></li>
+        <li><a href="evidence.html">Nachweise</a></li>
       </ul>
     </nav>
   </footer>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="780" viewBox="0 0 1120 780" role="img" aria-labelledby="title desc">
+  <title id="title">von Poncet Cloud Dashboard</title>
+  <desc id="desc">Eine elegante Cloud-Software-Oberfläche mit Dokumenten, Aufgaben, Kundenstatus und Sicherheitskontrollen.</desc>
+  <defs>
+    <linearGradient id="bg" x1="80" x2="1040" y1="40" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#eaf4ff"/>
+      <stop offset="0.55" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#e8fbf5"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="90" x2="1030" y1="88" y2="170" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1557c0"/>
+      <stop offset="1" stop-color="#0c8764"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1120" height="780" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#0b1726" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="1120" height="780" rx="40" fill="url(#bg)"/>
+  <path d="M858 104c96 52 153 156 126 250-27 95-136 179-250 190-114 12-233-49-282-145-49-97-28-229 52-291 80-63 258-56 354-4z" fill="#1557c0" opacity="0.08"/>
+  <g filter="url(#shadow)">
+    <rect x="82" y="82" width="956" height="616" rx="28" fill="#fff"/>
+    <rect x="82" y="82" width="956" height="92" rx="28" fill="url(#bar)"/>
+    <path d="M82 146h956v28H82z" fill="url(#bar)"/>
+    <circle cx="132" cy="128" r="12" fill="#fff" opacity="0.96"/>
+    <circle cx="168" cy="128" r="12" fill="#91e4cf" opacity="0.96"/>
+    <circle cx="204" cy="128" r="12" fill="#a8c9ff" opacity="0.96"/>
+    <text x="254" y="138" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800">von Poncet Cloud</text>
+    <rect x="790" y="108" width="180" height="40" rx="12" fill="#fff" opacity="0.16"/>
+    <text x="820" y="135" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800">Security OK</text>
+    <rect x="118" y="214" width="216" height="430" rx="22" fill="#f5f8fc" stroke="#d8e3ee" stroke-width="2"/>
+    <rect x="148" y="250" width="132" height="16" rx="8" fill="#1557c0"/>
+    <rect x="148" y="304" width="154" height="14" rx="7" fill="#8da0b4"/>
+    <rect x="148" y="350" width="118" height="14" rx="7" fill="#8da0b4"/>
+    <rect x="148" y="396" width="146" height="14" rx="7" fill="#8da0b4"/>
+    <rect x="148" y="442" width="98" height="14" rx="7" fill="#8da0b4"/>
+    <rect x="148" y="536" width="128" height="52" rx="14" fill="#0c8764"/>
+    <text x="176" y="569" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800">Sicher</text>
+    <rect x="374" y="214" width="276" height="178" rx="22" fill="#ecf4ff" stroke="#c5d9f2" stroke-width="2"/>
+    <text x="408" y="270" fill="#0b1726" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="800">Dokumente</text>
+    <rect x="408" y="306" width="172" height="14" rx="7" fill="#5e7082"/>
+    <rect x="408" y="340" width="126" height="14" rx="7" fill="#5e7082"/>
+    <path d="M584 258h-50a18 18 0 0 1-18-18v-12h68z" fill="#1557c0" opacity="0.2"/>
+    <rect x="690" y="214" width="286" height="178" rx="22" fill="#ebfbf6" stroke="#b9e5d7" stroke-width="2"/>
+    <text x="724" y="270" fill="#0b1726" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="800">Aufgaben</text>
+    <circle cx="738" cy="316" r="11" fill="#0c8764"/>
+    <rect x="766" y="309" width="134" height="14" rx="7" fill="#5e7082"/>
+    <circle cx="738" cy="356" r="11" fill="#0c8764"/>
+    <rect x="766" y="349" width="104" height="14" rx="7" fill="#5e7082"/>
+    <rect x="374" y="428" width="602" height="216" rx="22" fill="#fff" stroke="#d8e3ee" stroke-width="2"/>
+    <text x="408" y="484" fill="#0b1726" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="800">Workflow-Status</text>
+    <rect x="408" y="524" width="430" height="20" rx="10" fill="#d8e3ee"/>
+    <rect x="408" y="524" width="312" height="20" rx="10" fill="#1557c0"/>
+    <rect x="408" y="570" width="228" height="14" rx="7" fill="#5e7082"/>
+    <rect x="694" y="548" width="198" height="48" rx="14" fill="#f5f8fc" stroke="#d8e3ee" stroke-width="2"/>
+    <text x="722" y="579" fill="#183047" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800">Kundenfreigabe</text>
+    <path d="M900 488l26 26 54-68" fill="none" stroke="#0c8764" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

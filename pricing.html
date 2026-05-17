@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Preise und Abo-Tarife fuer KvPCloud: Free, Team, Business und Enterprise.">
-  <link rel="stylesheet" href="style/style.css">
-  <title>Preise | KvPCloud</title>
+  <meta name="description" content="Preise und Abo-Tarife für von Poncet Cloud: Free, Team, Business und Enterprise.">
+  <link rel="stylesheet" href="style/style.css?v=7">
+  <script src="js/main.js" defer></script>
+  <title>Preise | von Poncet Cloud</title>
 </head>
 <body>
-  <header>
-    <a href="index.html" aria-label="KvPCloud Startseite">KvPCloud</a>
-
+  <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="von Poncet Cloud Startseite"><span class="brand-logo" aria-hidden="true"></span>von Poncet Cloud</a>
     <nav aria-label="Hauptnavigation">
       <ul>
         <li><a href="index.html">Startseite</a></li>
+        <li><a href="product.html">Produkt</a></li>
         <li><a href="pricing.html" aria-current="page">Preise</a></li>
         <li><a href="cart.html">Warenkorb</a></li>
         <li><a href="about.html">About us</a></li>
@@ -22,33 +24,33 @@
     </nav>
   </header>
 
-  <main>
-    <section class="hero-text-only">
+  <main id="main-content">
+    <section class="hero hero-text-only hero-pricing">
       <div>
-        <p>Freemium und monatliches Abo</p>
-        <h1>Wählen Sie den passenden KvPCloud-Tarif für Ihr Unternehmen.</h1>
-        <p>
-          KvPCloud wird als SaaS-Anwendung im Abo-Modell angeboten. Die Tarife
-          richten sich nach Teamgröße und Funktionsumfang.
-        </p>
-        <p>
-          Vom kostenlosen Einstieg bis zur Enterprise-Anfrage bildet der Webshop
-          typische SaaS-Angebote ab. Die Auswahl führt direkt in den Warenkorb.
-        </p>
-        <p>
-          <a href="cart.html">Zum Warenkorb</a>
-          <a href="license.html">Lizenzbedingungen lesen</a>
-        </p>
+        <p class="eyebrow">Freemium und monatliches Abo</p>
+        <h1>Tarife für jedes Team</h1>
+        <p class="lead">Starten Sie kostenlos, erweitern Sie bei wachsendem Bedarf und behalten Sie Lizenzumfang, Laufzeit und Kosten klar im Blick.</p>
+        <div class="actions">
+          <a class="button" href="cart.html?plan=team">Team auswählen</a>
+          <a class="button secondary" href="terms.html">AGB lesen</a>
+          <a class="button secondary" href="license.html">Lizenzbedingungen lesen</a>
+        </div>
       </div>
     </section>
 
     <section aria-labelledby="plans-heading">
       <h2 id="plans-heading">Tarife</h2>
+      <div class="legal-callout" role="note">
+        <strong>Preisangaben</strong>
+        <p>Die Tarife sind Demo-Bruttopreise für ein fiktives B2B-Angebot in Österreich. Der Warenkorb zeigt den enthaltenen Umsatzsteueranteil zusätzlich aus.</p>
+      </div>
       <div class="pricing-grid">
         <article class="price-card">
+          <span class="badge">Einstieg</span>
           <h3>Free</h3>
-          <p class="price">0 € <span>/ Monat</span></p>
-          <p>Für Einzelpersonen und Testnutzer, die KvPCloud ausprobieren möchten.</p>
+          <p class="price">0 EUR <span>/ Monat</span></p>
+          <p class="price-note">Demo-Bruttopreis</p>
+          <p>Für Einzelpersonen, die zentrale Ablage und Aufgabenlisten nutzen möchten.</p>
           <ul>
             <li>1 Benutzerkonto</li>
             <li>Basis-Dokumentenablage</li>
@@ -57,24 +59,26 @@
           </ul>
           <a href="cart.html?plan=free">Free auswählen</a>
         </article>
-
         <article class="price-card featured">
+          <span class="badge">Beliebt</span>
           <h3>Team</h3>
-          <p class="price">19 € <span>/ Monat</span></p>
-          <p>Für kleine Teams, die Dokumente und Aufgaben gemeinsam verwalten.</p>
+          <p class="price">22,80 EUR <span>/ Monat</span></p>
+          <p class="price-note">Demo-Bruttopreis</p>
+          <p>Für kleine Teams, die Dokumente, Aufgaben und Kundenkontext gemeinsam steuern.</p>
           <ul>
             <li>bis zu 5 Benutzerkonten</li>
             <li>Team-Dokumentenablage</li>
-            <li>Aufgaben- und Projektmanagement</li>
+            <li>Projekt- und Aufgabenmanagement</li>
             <li>E-Mail-Support</li>
           </ul>
           <a href="cart.html?plan=team">Team auswählen</a>
         </article>
-
         <article class="price-card">
+          <span class="badge">Wachstum</span>
           <h3>Business</h3>
-          <p class="price">49 € <span>/ Monat</span></p>
-          <p>Für Unternehmen mit mehreren Abteilungen und höheren Sicherheitsanforderungen.</p>
+          <p class="price">58,80 EUR <span>/ Monat</span></p>
+          <p class="price-note">Demo-Bruttopreis</p>
+          <p>Für Unternehmen mit mehreren Abteilungen und erhöhten Sicherheitsanforderungen.</p>
           <ul>
             <li>bis zu 25 Benutzerkonten</li>
             <li>Rollen- und Rechteverwaltung</li>
@@ -83,11 +87,12 @@
           </ul>
           <a href="cart.html?plan=business">Business auswählen</a>
         </article>
-
         <article class="price-card">
+          <span class="badge">Individuell</span>
           <h3>Enterprise</h3>
           <p class="price">Preis auf Anfrage</p>
-          <p>Für größere Firmen mit individuellen Anforderungen und Integrationen.</p>
+          <p class="price-note">Individuelles Demo-Angebot</p>
+          <p>Für größere Firmen mit Integrationen, API-Nutzung und persönlicher Betreuung.</p>
           <ul>
             <li>individuelle Benutzeranzahl</li>
             <li>API-Zugang</li>
@@ -99,28 +104,37 @@
       </div>
     </section>
 
+    <section class="media-band" aria-labelledby="pricing-fit-heading">
+      <div class="media-copy">
+        <p class="eyebrow">Skalierung</p>
+        <h2 id="pricing-fit-heading">Wachsen ohne Bruch</h2>
+        <p>Von Free bis Enterprise bleiben Oberfläche, Rechte und Prozesse konsistent. Teams erweitern den Umfang, ohne den Arbeitsfluss neu zu lernen.</p>
+      </div>
+      <figure class="image-panel">
+        <img src="assets/images/vonponcetcloud-pricing-still-life.png" alt="Physische Abo-Tarifblöcke mit Auswahlmarker und sicheren Bestellunterlagen">
+      </figure>
+    </section>
+
     <section aria-labelledby="included-heading">
-      <h2 id="included-heading">In allen Tarifen enthalten</h2>
-      <ul>
-        <li>Zugriff auf die KvPCloud-Webanwendung während der Abo-Laufzeit</li>
-        <li>regelmäßige Sicherheits- und Funktionsupdates als Produktversprechen</li>
-        <li>transparente Datenschutz- und Lizenzinformationen</li>
-        <li>responsive Weboberfläche für Desktop, Tablet und Smartphone</li>
-      </ul>
+      <h2 id="included-heading">Immer enthalten</h2>
+      <div class="grid">
+        <article class="card"><h3>Nutzungsrecht während der Laufzeit</h3><p>Ihr Unternehmen erhält Zugriff auf die von Poncet Cloud-Webanwendung für interne Geschäftsprozesse.</p></article>
+        <article class="card"><h3>Sichere Grundlage</h3><p>Strukturierte Berechtigungen, klare Verantwortlichkeiten und transparente Datenschutzinformationen gehören zur Plattform.</p></article>
+        <article class="card"><h3>Responsive Oberfläche</h3><p>von Poncet Cloud ist für Desktop, Tablet und Smartphone gestaltet und bleibt per Tastatur bedienbar.</p></article>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 KvP Solutions GmbH.</p>
+  <footer class="site-footer">
+    <p>&copy; 2026 von Poncet Solutions GmbH.</p>
     <nav aria-label="Footer-Navigation">
       <ul>
         <li><a href="accessibility.html">Barrierefreiheit</a></li>
         <li><a href="copyright.html">Urheberrecht</a></li>
-        <li><a href="about.html">About us</a></li>
         <li><a href="privacy.html">Datenschutz</a></li>
-        <li><a href="license.html">Lizenz</a></li>
-        <li><a href="contact.html">Kontakt</a></li>
+        <li><a href="terms.html">AGB</a></li><li><a href="license.html">Lizenz</a></li>
         <li><a href="imprint.html">Impressum</a></li>
+        <li><a href="evidence.html">Nachweise</a></li>
       </ul>
     </nav>
   </footer>

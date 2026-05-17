@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">von Poncet Cloud Bildmarke</title>
+  <desc id="desc">Cloud-Bildmarke mit blauen digitalen Leiterbahnen und grünem Blatt</desc>
+  <defs>
+    <linearGradient id="cloudStroke" x1="108" x2="430" y1="150" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#086fbe"/>
+      <stop offset="0.45" stop-color="#0c79b8"/>
+      <stop offset="1" stop-color="#5ab22f"/>
+    </linearGradient>
+    <linearGradient id="leafFill" x1="276" x2="430" y1="318" y2="250" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0d8f72"/>
+      <stop offset="0.62" stop-color="#41a844"/>
+      <stop offset="1" stop-color="#66b72e"/>
+    </linearGradient>
+    <linearGradient id="pixelFill" x1="68" x2="150" y1="208" y2="288" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b74c8"/>
+      <stop offset="1" stop-color="#086fbe"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="40" fill="#ffffff"/>
+
+  <path d="M118 315c-42 0-76-34-76-76 0-39 30-72 69-76 19-66 80-114 153-114 80 0 147 57 162 132 47 5 84 45 84 93 0 52-42 94-94 94h-73" fill="none" stroke="url(#cloudStroke)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M344 368H118c-34 0-64-22-73-54" fill="none" stroke="url(#cloudStroke)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="62" y="224" width="21" height="21" rx="3" fill="url(#pixelFill)"/>
+  <rect x="98" y="202" width="21" height="21" rx="3" fill="url(#pixelFill)"/>
+  <rect x="102" y="254" width="27" height="27" rx="4" fill="url(#pixelFill)"/>
+  <rect x="146" y="223" width="25" height="25" rx="4" fill="url(#pixelFill)"/>
+  <rect x="58" y="277" width="22" height="22" rx="3" fill="url(#pixelFill)"/>
+
+  <path d="M92 311h136l55-55h55" fill="none" stroke="#0871c2" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M122 275h102l58-80" fill="none" stroke="#0871c2" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M138 236h88l45-61" fill="none" stroke="#0871c2" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M119 348h139l48-49h57" fill="none" stroke="#0871c2" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <circle cx="284" cy="175" r="17" fill="#ffffff" stroke="#0871c2" stroke-width="12"/>
+  <circle cx="338" cy="256" r="17" fill="#ffffff" stroke="#0871c2" stroke-width="12"/>
+  <circle cx="363" cy="299" r="17" fill="#ffffff" stroke="#0871c2" stroke-width="12"/>
+
+  <path d="M274 379c54-74 91-101 180-112-18 66-59 104-121 119-22 5-41 4-59-7Z" fill="url(#leafFill)"/>
+  <path d="M299 364c34-31 71-53 122-70" fill="none" stroke="#ffffff" stroke-width="13" stroke-linecap="round"/>
+</svg>
