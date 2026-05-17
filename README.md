@@ -42,15 +42,6 @@ Die rechtlichen Seiten orientieren sich an österreichischem Recht und vermeiden
 
 Für eine echte Veröffentlichung bleiben anwaltliche Prüfung, echte Unternehmensdaten, konkrete Hostinganbieter, Auftragsverarbeitungsverträge, Löschkonzept, Transferbewertung und produktive Vertragsbedingungen offen.
 
-## Nachweise
-
-- `evidence.html`: sichtbare Website-Seite mit den abgaberelevanten Nachweisen
-- `Nachweise/Bildnachweise_KI.md`: Dokumentation der KI-generierten Bilder, Modellangabe und Nutzung
-- `Nachweise/Barrierefreiheit_Audit.md`: WCAG-orientierter Selbsttest mit Tastatur-, Struktur- und Kontrastpruefung
-- `Nachweise/Markenrecherche.md`: Markenformen, Nizza-Klassen und Recherchelogik
-- `Nachweise/QS_Nachweise.md`: technische und inhaltliche Prüfliste
-- `../Oesterreichischer_Rechtsplan.md`: Rechtsplan zur österreichischen Einordnung
-- `../Umsetzungsbewertung_Exzellenz.md`: Bewertung und Kritik der Umsetzung
 
 ## Validierung
 
